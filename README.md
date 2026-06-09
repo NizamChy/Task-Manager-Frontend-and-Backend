@@ -165,7 +165,7 @@ project-root/
 
 │
 
-├── frontend/
+├── frontend/Task-Manager/
 
 │   ├── node_modules/
 
