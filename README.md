@@ -89,6 +89,7 @@ Open a new terminal and navigate to the frontend folder:
 ```bash
 
 cd frontend
+cd Task-Manager
 
 npm install
 
