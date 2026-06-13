@@ -1,56 +1,31 @@
-Got it — here’s the **full README.md file code** (copy-paste ready):
-
-
-
 ````md
-
 # 🚀 Project Setup Guide
-
-
 
 This project consists of two parts:
 
+- 🖥️ Backend
 
-
-- 🖥️ Backend  
-
-- 🎨 Frontend  
-
-
+- 🎨 Frontend
 
 Follow the steps below to run the project locally.
 
-
-
 ---
 
-
-
 ## 📦 Clone the Repository
-
-
 
 ```bash
 
 git clone <your-repo-link>
 
 cd <your-project-folder>
-
+```
 ````
-
-
 
 ---
 
-
-
 ## ⚙️ Backend Setup
 
-
-
 Navigate to the backend folder and install dependencies:
-
-
 
 ```bash
 
@@ -60,11 +35,7 @@ npm install
 
 ```
 
-
-
 Run the backend server:
-
-
 
 ```bash
 
@@ -72,19 +43,11 @@ npm run dev
 
 ```
 
-
-
 ---
-
-
 
 ## 🎨 Frontend Setup
 
-
-
 Open a new terminal and navigate to the frontend folder:
-
-
 
 ```bash
 
@@ -95,11 +58,7 @@ npm install
 
 ```
 
-
-
 Run the frontend app:
-
-
 
 ```bash
 
@@ -107,47 +66,27 @@ npm run dev
 
 ```
 
-
-
 ---
-
-
 
 ## 🧩 Requirements
 
-
-
 Make sure you have installed:
 
+- Node.js (v16 or higher recommended)
 
-
-* Node.js (v16 or higher recommended)
-
-* npm or yarn
-
-
+- npm or yarn
 
 ---
-
-
 
 ## 💡 Notes
 
+- Backend and frontend should run in **separate terminals**
 
-
-* Backend and frontend should run in **separate terminals**
-
-* Ensure environment variables (`.env`) are properly configured (if applicable)
-
-
+- Ensure environment variables (`.env`) are properly configured (if applicable)
 
 ---
 
-
-
-## 📁 Project Structure (Optional)
-
-
+## 📁 Project Structure
 
 ```
 
@@ -179,23 +118,7 @@ project-root/
 
 ```
 
-
-
 ---
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
 
 ```
 Task-Manager
