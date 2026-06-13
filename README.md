@@ -91,38 +91,6 @@ Make sure you have installed:
 ## 📁 Project Structure
 
 ```
-
-project-root/
-
-│
-
-├── backend/
-
-│   ├── node_modules/
-
-│   ├── src/
-
-│   └── package.json
-
-│
-
-├── frontend/Task-Manager/
-
-│   ├── node_modules/
-
-│   ├── src/
-
-│   └── package.json
-
-│
-
-└── README.md
-
-```
-
----
-
-```
 Task-Manager
 ├─ backend
 │  ├─ .env
