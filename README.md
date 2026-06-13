@@ -196,3 +196,82 @@ project-root/
 
 
 
+
+```
+Task-Manager
+├─ backend
+│  ├─ .env
+│  ├─ config
+│  │  └─ db.js
+│  ├─ controllers
+│  │  ├─ authController.js
+│  │  ├─ reportController.js
+│  │  ├─ taskController.js
+│  │  └─ userController.js
+│  ├─ middlewares
+│  │  ├─ authMiddleware.js
+│  │  └─ uploadMiddleware.js
+│  ├─ models
+│  │  ├─ Task.js
+│  │  └─ User.js
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ routes
+│  │  ├─ authRoutes.js
+│  │  ├─ reportRoutes.js
+│  │  ├─ taskRoutes.js
+│  │  └─ userRoutes.js
+│  ├─ server.js
+│  └─ uploads
+│     └─ 1780848963596-profile_nizam_chowdhury.png
+├─ frontend
+│  └─ Task-Manager
+│     ├─ eslint.config.js
+│     ├─ index.html
+│     ├─ package-lock.json
+│     ├─ package.json
+│     ├─ public
+│     │  ├─ favicon.svg
+│     │  └─ icons.svg
+│     ├─ README.md
+│     ├─ src
+│     │  ├─ App.jsx
+│     │  ├─ assets
+│     │  │  ├─ hero.png
+│     │  │  ├─ react.svg
+│     │  │  └─ vite.svg
+│     │  ├─ components
+│     │  │  ├─ inputs
+│     │  │  │  ├─ Input.jsx
+│     │  │  │  └─ ProfilePhotoSelector.jsx
+│     │  │  └─ layouts
+│     │  │     └─ AuthLayout.jsx
+│     │  ├─ context
+│     │  ├─ hooks
+│     │  ├─ index.css
+│     │  ├─ main.jsx
+│     │  ├─ pages
+│     │  │  ├─ Admin
+│     │  │  │  ├─ CreateTask.jsx
+│     │  │  │  ├─ Dashboard.jsx
+│     │  │  │  ├─ ManageTasks.jsx
+│     │  │  │  └─ ManageUsers.jsx
+│     │  │  ├─ Auth
+│     │  │  │  ├─ Login.jsx
+│     │  │  │  └─ SignUp.jsx
+│     │  │  └─ User
+│     │  │     ├─ MyTasks.jsx
+│     │  │     ├─ UserDashboard.jsx
+│     │  │     └─ ViewTaskDetails.jsx
+│     │  ├─ routes
+│     │  │  └─ PrivateRoute.jsx
+│     │  └─ utils
+│     │     ├─ apiPaths.js
+│     │     ├─ axiosInstance.js
+│     │     ├─ data.js
+│     │     ├─ helper.js
+│     │     └─ uploadImage.js
+│     └─ vite.config.js
+└─ README.md
+
+```
