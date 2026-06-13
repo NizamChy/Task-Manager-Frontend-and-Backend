@@ -114,9 +114,8 @@ Task-Manager
 │  │  ├─ reportRoutes.js
 │  │  ├─ taskRoutes.js
 │  │  └─ userRoutes.js
-│  ├─ server.js
-│  └─ uploads
-│     └─ 1780848963596-profile_nizam_chowdhury.png
+│  └─ server.js
+│  
 ├─ frontend
 │  └─ Task-Manager
 │     ├─ eslint.config.js
