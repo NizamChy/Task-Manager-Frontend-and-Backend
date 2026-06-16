@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/Inputs/Input";
 import { validateEmail } from "../../utils/helper";
 import axiosInstance from "../../utils/axiosInstance";
-import { API_PATH } from "../../utils/apiPaths";
+import { API_PATHS } from "../../utils/apiPaths";
 import { UserContext } from "../../context/userContext";
 
 const Login = () => {
@@ -33,7 +33,7 @@ const Login = () => {
 
     // Login API Call
     try {
-      const response = await axiosInstance.post(API_PATH.AUTH.LOGIN, {
+      const response = await axiosInstance.post(API_PATHS.AUTH.LOGIN, {
         email,
         password,
       });
