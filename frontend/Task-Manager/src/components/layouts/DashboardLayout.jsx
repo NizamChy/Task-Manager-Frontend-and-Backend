@@ -11,7 +11,8 @@ const DashboardLayout = ({ children, activeMenu }) => {
 
       {user && (
         <div className="flex">
-          <div className="max-[100px]:hidden">
+          {/* max-[100px]:hidden => max-sm:hidden */}
+          <div className="max-sm:hidden">
             <SideMenu activeMenu={activeMenu} />
           </div>
           <div className="grow mx-5">{children}</div>
