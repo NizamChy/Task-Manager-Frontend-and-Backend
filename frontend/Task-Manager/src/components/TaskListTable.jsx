@@ -27,6 +27,8 @@ const TaskListTable = ({ tableData }) => {
     }
   };
 
+  console.log("tableData : ", tableData);
+
   return (
     <>
       <div className="overflow-x-auto p-0 rounded-lg mt-3">
@@ -36,30 +38,38 @@ const TaskListTable = ({ tableData }) => {
               <th className="py-3 px-4 text-gray-800 font-medium text-[13px]">
                 Name
               </th>
-              <th className="">Status</th>
-              <th className="">Priority</th>
-              <th className="">Created On</th>
+              <th className="py-3 px-4 text-gray-800 font-medium text-[13px]">
+                Status
+              </th>
+              <th className="py-3 px-4 text-gray-800 font-medium text-[13px]">
+                Priority
+              </th>
+              <th className="py-3 px-4 text-gray-800 font-medium text-[13px] hidden md:table-cell">
+                Created On
+              </th>
             </tr>
           </thead>
           <tbody>
             {tableData.map((task) => (
-              <tr key={task._id} className="">
-                <td className="">{task.title}</td>
-                <td className="">
+              <tr key={task._id} className="border-t border-gray-200">
+                <td className="my-3 mx-4 text-gray-700 text-[13px] line-clamp-1 overflow-hidden">
+                  {task.title}
+                </td>
+                <td className="py-4 px-4">
                   <span
                     className={`px-2 py-2 text-xs rounded inline-block ${getStatusBadgeColor(task.status)}`}
                   >
                     {task.status}
                   </span>
                 </td>
-                <td className="">
+                <td className="py-4 px-4">
                   <span
                     className={`px-2 py-2 text-xs rounded inline-block ${getPriorityBadgeColor(task.priority)}`}
                   >
                     {task.priority}
                   </span>
                 </td>
-                <td className="">
+                <td className="py-4 px-4 text-gray-700 text-[13px] text-nowrap hidden md:table-cell">
                   {task.createdAt
                     ? moment(task.createdAt).format("Do MMM YYYY")
                     : "N/A"}
