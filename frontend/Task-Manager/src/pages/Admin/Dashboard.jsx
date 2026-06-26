@@ -10,6 +10,9 @@ import InfoCard from "../../components/Cards/InfoCard";
 import { addThousandsSeparator } from "../../utils/helper";
 import { LuArrowRight } from "react-icons/lu";
 import TaskListTable from "../../components/TaskListTable";
+import CustomPieChart from "../../components/Charts/CustomPieChart";
+
+const COLORS = ["#8D51FF", "#00B8DB", "#7BCE00"];
 
 const Dashboard = () => {
   useUserAuth();
@@ -33,7 +36,7 @@ const Dashboard = () => {
       { status: "Completed", count: taskDistribution?.Completed || 0 },
     ];
 
-    setBarChartData(taskDistributionData);
+    setPieChartData(taskDistributionData);
 
     const PriorityLevelsData = [
       { priority: "Low", count: taskPriorityLevels?.Low || 0 },
@@ -122,9 +125,11 @@ const Dashboard = () => {
           {/* chart */}
           <div>
             <div className="card">
-              <div className="flex items-center justify-between ">
+              <div className="flex items-center justify-between">
                 <h5 className="font-medium">Task Distribution</h5>
               </div>
+
+              <CustomPieChart data={pieChartData} colors={COLORS} />
             </div>
           </div>
           {/* chart end */}
