@@ -2,6 +2,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import DashboardLayout from "../../components/layouts/DashboardLayout";
 import { useState } from "react";
 import { LuTrash2 } from "react-icons/lu";
+import { PRIORITY_DATA } from "../../utils/data";
+import SelectDropdown from "../../components/inputs/SelectDropdown";
 
 const CreateTask = () => {
   const location = useLocation();
@@ -87,6 +89,37 @@ const CreateTask = () => {
                 value={taskData.title}
                 onChange={(target) => handleValueChange("title", target.value)}
               />
+            </div>
+
+            <div className="mt-3">
+              <label className="text-xs font-medium text-slate-600">
+                Description
+              </label>
+              <textarea
+                type="text"
+                placeholder="Describe task"
+                rows={4}
+                className="form-input"
+                value={taskData.description}
+                onChange={(target) =>
+                  handleValueChange("description", target.value)
+                }
+              />
+            </div>
+
+            <div className="grid grid-cols-12 gap-4 mt-2">
+              <div className="col-span-6 md:col-span-4">
+                <label className="text-xs font-medium text-slate-600">
+                  Priority
+                </label>
+
+                <SelectDropdown
+                  options={PRIORITY_DATA}
+                  value={taskData.priority}
+                  onChange={(value) => handleValueChange("priority", value)}
+                  placeholder="Select Priority"
+                />
+              </div>
             </div>
           </div>
         </div>
