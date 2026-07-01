@@ -120,6 +120,22 @@ const CreateTask = () => {
                   placeholder="Select Priority"
                 />
               </div>
+              <div className="col-span-6 md:col-span-4">
+                <label className="text-xs font-medium text-slate-600">
+                  Due Date
+                </label>
+
+                <input
+                  type="text"
+                  placeholder="Select Due Date"
+                  className="form-input"
+                  value={taskData.dueDate}
+                  onChange={(target) =>
+                    handleValueChange("dueDate", target.value)
+                  }
+                  type="date"
+                />
+              </div>
             </div>
           </div>
         </div>
